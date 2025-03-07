@@ -1,0 +1,26 @@
+{
+	"apiVersion": 2,
+	"name": "myplugin/toggle-block",
+	"title": "Toggle Block",
+	"category": "common",
+	"icon": "universal-access-alt",
+	"description": "A simple toggle block built with React, now with image support.",
+	"attributes": {
+		"toggled": {
+			"type": "boolean",
+			"default": false
+		},
+		"content": {
+			"type": "string",
+			"source": "html",
+			"selector": "p",
+			"default": "Hello from React block!"
+		},
+		"image": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"textdomain": "myplugin",
+	"editorScript": "file:./index.js"
+}
